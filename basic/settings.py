@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'instagram',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
