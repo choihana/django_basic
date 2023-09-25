@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, Comment
 
 
 # Register your models here.
@@ -10,3 +10,6 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ['created_at','is_public']
     search_fields = ['message']
 
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    pass

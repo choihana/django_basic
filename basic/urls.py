@@ -24,6 +24,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('instagram/', include('instagram.urls')),
     path('__debug__', include('debug_toolbar.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
 
 
