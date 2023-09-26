@@ -10,3 +10,4 @@ def post_list(request):
         'post_list':qs,
         'q':q
     })
+
