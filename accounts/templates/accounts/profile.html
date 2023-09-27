@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} profile {% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+<h2>{{user}}님</h2>
+{{user.profile.address}}
+<a href="{% url 'profile-edit' %}">프로필 수정</a>
+{% endif%}
+{% endblock %}
