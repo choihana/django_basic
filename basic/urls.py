@@ -25,6 +25,7 @@ urlpatterns = [
     path('instagram/', include('instagram.urls')),
     path('__debug__', include('debug_toolbar.urls')),
     path('accounts/', include('accounts.urls')),
+    path('api/',include('rest_framework.urls')),
 ]
 
 
