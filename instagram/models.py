@@ -5,7 +5,7 @@ from django.db import models
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     message = models.TextField()
-    photo = models.ImageField(blank=True, upload_to='instagram/post/%Y%m')
+    photo = models.ImageField(blank=True, upload_to='instagram/post/%Y%m', null=True)
     tag_set = models.ManyToManyField('tag', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

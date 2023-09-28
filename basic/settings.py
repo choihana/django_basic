@@ -139,3 +139,10 @@ INTERNAL_IPS = ['127.0.0.1', ]
 
 # 추후 커스텀 유저 모델 생성 시 변경
 AUTH_USER_MODEL = 'auth.USER'
+
+# 인증관련 디폴트 값 설정
+# REST_FRAMEWORK ={
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ],
+# }
